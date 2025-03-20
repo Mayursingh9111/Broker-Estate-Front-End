@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   server: {
     proxy: {
-      "/api": {
+      "../api": {
         target: import.meta.env.VITE_BACKEND_API,
         secure: false,
       },
